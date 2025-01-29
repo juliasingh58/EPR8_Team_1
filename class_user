@@ -1,0 +1,7 @@
+__author__ = "8072902, Dunkel, 8488705, Singh"
+
+class User:
+    def __init__(self, role, username, password):
+        self.role = role
+        self.username = username
+        self.password = password
