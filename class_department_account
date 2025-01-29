@@ -1,0 +1,18 @@
+__author__ = "8072902, Dunkel, 8488705, Singh"
+
+class DepartmentAccount:
+    def __init__(self, department, balance):
+        self.department = department
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance - amount < 0:
+            print("Cannot withdraw more money than the department account contains")
+            return
+        self.balance -= amount
+
+    def view_transaction_history(self):
+        pass
